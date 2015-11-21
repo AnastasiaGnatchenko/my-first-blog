@@ -4,10 +4,15 @@
     </head>
     <body>
     	<div>
+    	{% for post in posts %}
+    		<p>published: {{ post.published_date }}</p>
             <h1><em>Первый сайт</em></h1>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
+    {% endfor %}
         <div>
             <h2><strong>А точнее блог ...:)</strong></h2>
+            {{ posts }}
         </div>
         <div>
             <strong>Это было ну ооосень не легко и мозгоемко!Но...я справилась!!!</strong>
