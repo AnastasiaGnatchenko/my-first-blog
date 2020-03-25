@@ -18,3 +18,4 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    Буду душить как собаку СУТУЛУЮ за такой код
